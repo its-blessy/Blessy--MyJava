@@ -1,0 +1,25 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Array{
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int size = sc.nextInt();
+        int ECE[] = new int[size];
+        for (int i = 0; i < size; i++)
+            ECE[i] = sc.nextInt();
+        int max = ECE[0];
+        for (int i = 0; i < size; i++) {
+            if (max < ECE[i])
+                max = ECE[i];
+        }
+        System.out.println("Maximum " + max);
+    }
+}
+
+OUTPUT:
+5
+12 34 56 30 11
+Maximum 56
+
